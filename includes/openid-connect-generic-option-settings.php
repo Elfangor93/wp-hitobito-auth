@@ -122,19 +122,19 @@ class OpenID_Connect_Generic_Option_Settings {
 	 	*/
 	 
 		if ($this->values ['endpoint_url'] == 'test') {
-			$urlauth = 'https://pbs.puzzle.ch/oauth/';
+			$urlauth = 'https://pbs.puzzle.ch/';
 		} elseif ($this->values ['endpoint_url'] == 'prod') {
-			$urlauth = 'https://db.scout.ch/oauth/';
+			$urlauth = 'https://db.scout.ch/';
 		} elseif ($this->values ['endpoint_url'] == 'jublatest') {
-			$urlauth = 'https://jubla.puzzle.ch/oauth/';
+			$urlauth = 'https://jubla.puzzle.ch/';
 		} elseif ($this->values ['endpoint_url'] == 'jubla') {
-			$urlauth = 'https://db.jubla.ch/oauth/';
+			$urlauth = 'https://db.jubla.ch/';
 		} 
 
-			$this->values['endpoint_login'] 		= $urlauth . 'authorize';
-			$this->values['endpoint_userinfo'] 		= $urlauth . 'userinfo';
-			$this->values['endpoint_token'] 		= $urlauth . 'token';
-			$this->values['endpoint_end_session'] 	= $urlauth . 'logout';
+			$this->values['endpoint_login'] 		= $urlauth . 'oauth/authorize';
+			$this->values['endpoint_userinfo'] 		= $urlauth . 'oauth/userinfo';
+			$this->values['endpoint_token'] 		= $urlauth . 'oauth/token';
+			$this->values['endpoint_end_session'] 	= $urlauth . 'oidc/logout';
 
 		// For each defined environment variable/constant be sure the settings key is set.
 		foreach ( $this->environment_settings as $key => $constant ) {
