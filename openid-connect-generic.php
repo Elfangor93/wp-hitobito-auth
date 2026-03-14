@@ -369,6 +369,7 @@ class OpenID_Connect_Generic {
 				'client_id'            => defined( 'OIDC_CLIENT_ID' ) ? OIDC_CLIENT_ID : '',
 				'client_secret'        => defined( 'OIDC_CLIENT_SECRET' ) ? OIDC_CLIENT_SECRET : '',
 				'scope'                => 'openid email name',
+				'endpoint_url'         => 'test',
 				'endpoint_login'       => '',
 				'endpoint_userinfo'    => '',
 				'endpoint_token'       => '',
