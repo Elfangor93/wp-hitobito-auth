@@ -388,6 +388,7 @@ class OpenID_Connect_Generic {
 
 				// Plugin settings.
 				'enforce_privacy'          => defined( 'OIDC_ENFORCE_PRIVACY' ) ? intval( OIDC_ENFORCE_PRIVACY ) : 0,
+				'button_txt'               => 'Login with Hitobito',
 				'alternate_redirect_uri'   => 0,
 				'token_refresh_enable'     => 1,
 				'link_existing_users'      => 1,

@@ -48,15 +48,16 @@
  *
  * Plugin Settings:
  *
- * @property bool $enforce_privacy          The flag to indicates whether a user us required to be authenticated to access the site.
- * @property bool $alternate_redirect_uri   The flag to indicate whether to use the alternative redirect URI.
- * @property bool $token_refresh_enable     The flag whether to support refresh tokens by IDPs.
- * @property bool $link_existing_users      The flag to indicate whether to link to existing WordPress-only accounts or greturn an error.
- * @property bool $create_if_does_not_exist The flag to indicate whether to create new users or not.
- * @property bool $redirect_user_back       The flag to indicate whether to redirect the user back to the page on which they started.
- * @property bool $redirect_on_logout       The flag to indicate whether to redirect to the login screen on session expiration.
- * @property bool $enable_logging           The flag to enable/disable logging.
- * @property int  $log_limit                The maximum number of log entries to keep.
+ * @property bool   $enforce_privacy          The flag to indicates whether a user us required to be authenticated to access the site.
+ * @property bool   $alternate_redirect_uri   The flag to indicate whether to use the alternative redirect URI.
+ * @property bool   $token_refresh_enable     The flag whether to support refresh tokens by IDPs.
+ * @property bool   $link_existing_users      The flag to indicate whether to link to existing WordPress-only accounts or greturn an error.
+ * @property bool   $create_if_does_not_exist The flag to indicate whether to create new users or not.
+ * @property bool   $redirect_user_back       The flag to indicate whether to redirect the user back to the page on which they started.
+ * @property bool   $redirect_on_logout       The flag to indicate whether to redirect to the login screen on session expiration.
+ * @property bool   $enable_logging           The flag to enable/disable logging.
+ * @property int    $log_limit                The maximum number of log entries to keep.
+ * @property string $button_txt               The text shown in the login button.
  */
 class OpenID_Connect_Generic_Option_Settings {
 
@@ -96,6 +97,7 @@ class OpenID_Connect_Generic_Option_Settings {
 		'login_type'                => 'OIDC_LOGIN_TYPE',
 		'scope'                     => 'OIDC_CLIENT_SCOPE',
 		'create_if_does_not_exist'  => 'OIDC_CREATE_IF_DOES_NOT_EXIST',
+		'button_txt'                => 'OIDC_BUTTON_TXT',
 		'enforce_privacy'           => 'OIDC_ENFORCE_PRIVACY',
 		'link_existing_users'       => 'OIDC_LINK_EXISTING_USERS',
 		'redirect_on_logout'        => 'OIDC_REDIRECT_ON_LOGOUT',
